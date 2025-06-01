@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #222;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+      .main-image {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 1;
+      }
+      .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(44,62,80,0.5);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .activities-btn {
+        padding: 20px 50px;
+        font-size: 2em;
+        background: #27ae60;
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        transition: background 0.2s;
+      }
+      .activities-btn:hover {
+        background: #219150;
+      }
+    </style>
+</head>
+<body>
+  <img class="main-image" src="https://i0.wp.com/calmatters.org/wp-content/uploads/2021/08/math-curriculum.jpg?fit=2000%2C1500&ssl=1" alt="Math Curriculum">
+  <div class="overlay">
+    <button class="activities-btn" onclick="window.location.href='http://127.0.0.1:5500/index.html'">
+      Activities
+    </button>
+  </div>
+</body>
+</html>
